@@ -16,5 +16,8 @@ while True:
     if not part:
         break
     response += part
+    
+ with open("google_response.html", "w", encoding="utf-8") as f:
+    f.write(response.decode('utf-8', errors='replace'))
 
 print(response.decode('utf-8', errors='replace'))
